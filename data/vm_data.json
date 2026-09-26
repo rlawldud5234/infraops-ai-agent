@@ -1,0 +1,26 @@
+{
+  "web-001": {
+    "status": "running",
+    "ip": "10.10.10.21",
+    "subnet": "255.255.255.0",
+    "gateway": "10.10.10.1",
+    "os": "RHEL 9",
+    "segment": "WEB-SEGMENT"
+  },
+  "web-002": {
+    "status": "running",
+    "ip": "10.10.10.22",
+    "subnet": "255.255.255.0",
+    "gateway": "10.10.10.1",
+    "os": "RHEL 9",
+    "segment": "WEB-SEGMENT"
+  },
+  "app-001": {
+    "status": "running",
+    "ip": "10.10.20.21",
+    "subnet": "255.255.255.0",
+    "gateway": "10.10.20.1",
+    "os": "RHEL 9",
+    "segment": "APP-SEGMENT"
+  }
+}

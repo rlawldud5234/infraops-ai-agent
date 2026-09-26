@@ -1,0 +1,32 @@
+{
+  "web-001": {
+    "dfw_status": "enabled",
+    "outbound_policy": "DENY",
+    "outbound_rule": "BLOCK-INTERNET-01",
+    "destination": "0.0.0.0/0",
+    "protocol": "ANY",
+    "rule_hit_count": 128,
+    "snat_policy": "SNAT-INTERNET",
+    "snat_status": "enabled"
+  },
+  "web-002": {
+    "dfw_status": "enabled",
+    "outbound_policy": "ALLOW",
+    "outbound_rule": "ALLOW-INTERNET-01",
+    "destination": "0.0.0.0/0",
+    "protocol": "ANY",
+    "rule_hit_count": 0,
+    "snat_policy": "SNAT-INTERNET",
+    "snat_status": "enabled"
+  },
+  "app-001": {
+    "dfw_status": "enabled",
+    "outbound_policy": "ALLOW",
+    "outbound_rule": "ALLOW-INTERNET-01",
+    "destination": "0.0.0.0/0",
+    "protocol": "ANY",
+    "rule_hit_count": 0,
+    "snat_policy": "SNAT-INTERNET",
+    "snat_status": "enabled"
+  }
+}

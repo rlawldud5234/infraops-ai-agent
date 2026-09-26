@@ -1,0 +1,35 @@
+{
+  "web-001": {
+    "vnic_connected": true,
+    "port_group": "WEB-PG",
+    "vlan": 100,
+    "gateway_reachable": true,
+    "internet_reachable": false,
+    "dns_reachable": true,
+    "tier1": "T1-WEB",
+    "tier0": "T0-PROD",
+    "edge_node": "edge-01"
+  },
+  "web-002": {
+    "vnic_connected": true,
+    "port_group": "WEB-PG",
+    "vlan": 100,
+    "gateway_reachable": true,
+    "internet_reachable": true,
+    "dns_reachable": true,
+    "tier1": "T1-WEB",
+    "tier0": "T0-PROD",
+    "edge_node": "edge-01"
+  },
+  "app-001": {
+    "vnic_connected": true,
+    "port_group": "APP-PG",
+    "vlan": 200,
+    "gateway_reachable": true,
+    "internet_reachable": true,
+    "dns_reachable": true,
+    "tier1": "T1-APP",
+    "tier0": "T0-PROD",
+    "edge_node": "edge-02"
+  }
+}
