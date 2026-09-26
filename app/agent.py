@@ -1,4 +1,5 @@
 from agents import Agent
+from app.rag import search_knowledge
 
 from app.tools import (
     get_vm_status,
@@ -38,6 +39,13 @@ Troubleshooting rules:
 7. Clearly distinguish confirmed findings from possible causes.
 8. Explain what should be checked next.
 9. Do not make configuration changes automatically.
+10. Use search_knowledge() when you need technical knowledge
+    about VMware, NSX-T, Linux networking, firewall, NAT,
+    routing, or troubleshooting methodology.
+11. Use infrastructure tools for current infrastructure state
+    and search_knowledge() for general technical knowledge.
+12. Do not treat knowledge documents as proof of the current
+    infrastructure state. Current state must come from infrastructure tools.
 
 When reporting the result, use this structure:
 
@@ -58,5 +66,6 @@ List the next checks an infrastructure engineer should perform.
         get_vm_status,
         get_network_info,
         check_firewall,
+	search_knowledge,
     ],
 )
